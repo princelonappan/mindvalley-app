@@ -1,6 +1,7 @@
 <?php
 
 use Faker\Generator as Faker;
+use Faker\Provider\Lorem as Lorem;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,13 +14,13 @@ use Faker\Generator as Faker;
 |
 */
 
-$factory->define(App\User::class, function (Faker $faker) {
-    static $password;
+$factory->define(App\Models\User::class, function (Faker $faker) {
 
     return [
         'name' => $faker->name,
         'email' => $faker->unique()->safeEmail,
-        'password' => $password ?: $password = bcrypt('secret'),
+        'password' => bcrypt('123456'),
         'remember_token' => str_random(10),
+        'isAdmin' => 1
     ];
 });

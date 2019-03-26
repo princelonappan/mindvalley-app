@@ -11,11 +11,21 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+//Route::get('/', function () {
+//    return view('welcome');
+//});
 
+Route::get('article/search', 'ArticleController@search');
+Route::get('/', 'ArticleController@index');
+Route::resource('article', 'ArticleController');
+Route::resource('category', 'CategoryController');
+Route::resource('tag', 'TagController');
+Route::get('logout', '\App\Http\Controllers\Auth\LoginController@logout');
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
-Route::get('admin/routes', 'HomeController@admin')->middleware('admin');
+
+Route::group(array('namespace' => 'admin', 'prefix' => 'admin', 'middleware' => 'admin'), function () {
+    Route::resource('article', 'ArticleController');
+    Route::resource('category', 'CategoryController');
+    Route::resource('tag', 'TagController');
+});
