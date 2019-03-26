@@ -49,3 +49,14 @@ Start the local development server
     php artisan serve
 
 You can now access the server at http://localhost:8000
+
+Admin login/Register URL
+
+    http://localhost:8000/login
+    http://localhost:8000/register
+
+Admin Article/Category/Tag
+
+    http://localhost:8000/admin/article
+    http://localhost:8000/admin/category
+    http://localhost:8000/admin/tag
