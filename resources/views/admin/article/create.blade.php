@@ -15,14 +15,14 @@
 
 <div class="form-group">
     {{ Form::label('name', 'Title') }}
-    {{ Form::text('name', Input::old('name'), array('class' => 'form-control', 'required' => 'required')) }}
+    {{ Form::text('name', Input::old('name'), array('class' => 'form-control')) }}
 </div>
 
 <!--<input name="sasa" data-validation="required">-->
 <!--<textarea name="sss" class="summernote"></textarea>-->
 <div class="form-group">
     {{ Form::label('description', 'Description') }}
-    {{ Form::textarea('description', Input::old('description'), array('class' => 'form-control summernote', 'data-validation' => 'required')) }}
+    {{ Form::textarea('description', Input::old('description'), array('class' => 'form-control summernote')) }}
 </div>
 
 <div class="form-group">
@@ -30,7 +30,7 @@
     {{ Form::select('category', $categories, NULL, array('class' => 'form-control')) }}
 </div>
 <div class="form-group">
-    <select required="required" data-placeholder="Select multiple tags" multiple class="chosen-select" name="tag[]" >
+    <select data-placeholder="Select multiple tags" multiple class="chosen-select" name="tag[]" >
         <option value=""></option>
         @foreach($tags as $tag)   
         <option value="{{$tag->id}}">{{$tag->name}}</option>
