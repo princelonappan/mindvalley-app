@@ -9,7 +9,7 @@
 
 ## Installation
 
-Please check the official laravel installation guide for server requirements before you start. [Official Documentation](https://laravel.com/docs/5.5/installation#installation)
+Please check the official laravel 5.5 installation guide for server requirements before you start. [Official Documentation](https://laravel.com/docs/5.5/installation#installation)
 
 
 Clone the repository
