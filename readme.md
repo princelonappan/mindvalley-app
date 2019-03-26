@@ -1,4 +1,4 @@
-# ![Laravel Example App](logo.png)
+# ![Article Management App](logo.png)
 
 > ### Laravel codebase containing Article Management
 
@@ -40,7 +40,7 @@ Run the seed command for adding fake data
 
     php artisan db:seed
 
-Run the seed command for adding fake data
+Install the node modules
 
     npm install
 
