@@ -6,7 +6,7 @@
     <!-- Breadcrumb -->
     <nav class="breadcrumb-nav">
         <ul>
-            <li><a href="#">{{ $article->category->name }}</a></li>
+            <li><a href="#"><?php (isset($article->category)) ? $article->category->name : ''; ?></a></li>
         </ul>
     </nav>
     <!-- Pruducts -->

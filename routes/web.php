@@ -11,10 +11,6 @@
 |
 */
 
-//Route::get('/', function () {
-//    return view('welcome');
-//});
-
 Route::get('article/search', 'ArticleController@search');
 Route::get('/', 'ArticleController@index');
 Route::resource('article', 'ArticleController');

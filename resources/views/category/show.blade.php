@@ -5,9 +5,9 @@
     <!-- CAROUSEL -->  
     <div class="line hide-s">
         <div id="header-carousel" class="owl-carousel owl-theme">
-            <div class="item"><img src="{{ asset('img/header-1.svg') }}" alt=""></div>
-            <div class="item"><img src="{{ asset('img/header-2.svg') }}" alt=""></div>
-            <div class="item"><img src="{{ asset('img/header-3.svg') }}" alt=""></div>
+            <div class="item"><img src="{{ asset('img/banner-1.jpg') }}" alt=""></div>
+            <div class="item"><img src="{{ asset('img/blog-banner.jpg') }}" alt=""></div>
+            <div class="item"><img src="{{ asset('img/blog_banner_trends.jpg') }}" alt=""></div>
         </div>
     </div>                  
     <!-- Breadcrumb -->
@@ -23,7 +23,7 @@
             @foreach($articles as $value)
             <?php
             $src = get_image_url($value->description);
-            $src = !empty($src) ? $src : asset('img/gallery-1.svg');
+            $src = !empty($src) ? $src : asset('img/blog_default.png');
             ?>
             <div class="s-12 m-12 l-4 xl-3 xxl-3">
                 <a href="/"><img class="full-img" src="{{ $src }}"></a>

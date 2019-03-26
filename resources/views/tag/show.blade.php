@@ -4,11 +4,11 @@
                <section class="s-12 m-8 l-9 xl-10">                  
                   <!-- CAROUSEL -->  
                   <div class="line hide-s">
-                    <div id="header-carousel" class="owl-carousel owl-theme">
-                       <div class="item"><img src="{{ asset('img/header-1.svg') }}" alt=""></div>
-                       <div class="item"><img src="{{ asset('img/header-2.svg') }}" alt=""></div>
-                       <div class="item"><img src="{{ asset('img/header-3.svg') }}" alt=""></div>
-                    </div>
+                      <div id="header-carousel" class="owl-carousel owl-theme">
+                          <div class="item"><img src="{{ asset('img/banner-1.jpg') }}" alt=""></div>
+                          <div class="item"><img src="{{ asset('img/blog-banner.jpg') }}" alt=""></div>
+                          <div class="item"><img src="{{ asset('img/blog_banner_trends.jpg') }}" alt=""></div>
+                      </div>
                   </div>                  
                   <!-- Breadcrumb -->
                   <nav class="breadcrumb-nav">
@@ -23,7 +23,7 @@
                       @foreach($articles as $value)
                       <?php  if(!empty($value->article)) { $i++;
                                                       $src = get_image_url($value->article->description);
-                                $src = !empty($src) ? $src : asset('img/gallery-1.svg');?>
+                                $src = !empty($src) ? $src : asset('img/blog_default.png');?>
                      <div class="s-12 m-12 l-4 xl-3 xxl-3">
                         <a href="{{ URL::to('article/' . $value->article->id) }}"><img class="full-img" src="{{ $src }}"></a>
 

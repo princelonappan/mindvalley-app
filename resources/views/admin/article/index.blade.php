@@ -32,7 +32,7 @@
             <tr>
                 <td>{{$i}}</td>
                 <td>{{ $value->title }}</td>
-                <td>{{ $value->category->name }}</td>
+                <td><?php (isset($value->category)) ? $value->category->name : ''; ?></td>
                 <td><?php
                     $i++;
                     $tag = '';

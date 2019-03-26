@@ -26,7 +26,7 @@
             <div class="line">
                 <div class="box">
                     <div class="s-12 l-2">
-                        <img class="full-img logo" src="{{ asset('img/logo.svg') }}">
+                        <img class="full-img logo" src="{{ asset('img/logo_new.png') }}">
                     </div>
                     <div class="s-12 l-8 right">
                         <div class="margin">      
