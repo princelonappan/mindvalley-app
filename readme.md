@@ -1,6 +1,6 @@
 # ![Article Management App](logo.png)
 
-> ### Laravel codebase containing Article Management Application
+> ### Option to manage the Articles
 
 
 ----------
